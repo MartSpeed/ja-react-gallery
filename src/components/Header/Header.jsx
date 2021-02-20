@@ -5,7 +5,7 @@
  function Header () {
    return (
         <header className="App-header">
-          <h1 className="App-title">John Anthony Gallery of My Life</h1>
+          <h1 className="App-title">John Anthony's Life Gallery</h1>
         </header>
    );
  }

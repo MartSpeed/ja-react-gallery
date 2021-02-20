@@ -12,4 +12,9 @@
 .App-title {
   font-size: 1.5em;
 }
+.react_container {
+  display: flex;
+  height: 150px;
+  flex-direction: row;
+}
 
