@@ -1,0 +1,13 @@
+/**
+ * HEADER COMPONENT
+ */
+
+ function Header () {
+   return (
+        <header className="App-header">
+          <h1 className="App-title">John Anthony Gallery of My Life</h1>
+        </header>
+   );
+ }
+
+ export default Header;
