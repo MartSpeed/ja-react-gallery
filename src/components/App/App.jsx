@@ -9,7 +9,6 @@ import Axios from 'axios';
 
 function App() {
 const [galleryList, setGalleryList] = useState([]);
-const [galleryItems, setGalleryItems] = useState('');
 
 useEffect(() => {
   getGalleryList();
@@ -32,7 +31,7 @@ const getGalleryList = () => {
 
         <p>Gallery goes here</p>
 
-        <img src="images/goat_small.jpg"/>
+        {/* <img src="images/goat_small.jpg"/> */}
 
         <div className="react_container">
           <GalleryList

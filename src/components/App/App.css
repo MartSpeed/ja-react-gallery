@@ -12,9 +12,16 @@
 .App-title {
   font-size: 1.5em;
 }
-.react_container {
-  display: flex;
-  height: 150px;
-  flex-direction: row;
+.react_container {  
+  margin: 0;
+  padding: 0;
 }
-
+img {
+  margin: 10px;
+}
+p {
+  margin: 5px;
+}
+button {
+  padding: 4px;
+}

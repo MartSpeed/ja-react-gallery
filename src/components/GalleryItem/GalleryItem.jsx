@@ -6,10 +6,21 @@
  function GalleryItem ({photo}) {
    return (<>
       <img src={photo.path} />
-      <p>{photo.id}</p>
-      <p>{photo.description}</p>
       <p>{photo.likes}</p>
+      <p>{photo.description}</p>
+      <p>
+        <button>Submit</button>
+      </p>
+      
    </>)
  }
 
  export default GalleryItem;
+
+ /**
+  * variable options
+  * <p>{photo.id}</p>
+  * 
+  * <p>{photo.description}</p>
+  * 
+  */
