@@ -34,7 +34,9 @@ const getGalleryList = () => {
 
         <div className="react_container">
           <GalleryList
-          galleryList={galleryList} />
+          galleryList={galleryList} 
+          getGalleryList={getGalleryList}
+          />
         </div>
 
       </div>
