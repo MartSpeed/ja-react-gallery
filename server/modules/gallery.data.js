@@ -9,7 +9,7 @@ const galleryItems = [
       likes: 0 },
     { id: 3, 
       path: 'images/rollercoaster.jpg', 
-      description: 'I miss riding roller coasters the most, I miss the speed the fun, the turns, even waiting in line att his point', 
+      description: 'I miss riding roller coasters the most, I miss the speed the fun, the turns, even waiting in line at his point', 
       likes: 0 },
     { id: 4, 
       path: 'images/speedracermovie.jpeg', 

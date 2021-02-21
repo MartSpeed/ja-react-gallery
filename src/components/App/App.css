@@ -18,9 +18,13 @@
 }
 img {
   margin: 10px;
+  border: 8px solid salmon;
 }
 p {
-  margin: 5px;
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  border: 8px solid green;
 }
 button {
   padding: 4px;
