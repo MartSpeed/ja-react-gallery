@@ -5,7 +5,6 @@ import './App.css';
 // COMPONENTS
 import Header from '../Header/Header';
 import GalleryList from '../GalleryList/GalleryList';
-import Axios from 'axios';
 
 function App() {
 const [galleryList, setGalleryList] = useState([]);
@@ -18,7 +17,7 @@ const getGalleryList = () => {
   axios
     .get('/gallery')
     .then(response => {
-      console.log('response data', response.data);
+      console.log('getGallery GET response', response.data);
       setGalleryList(response.data);
     })
     .catch((error) => {

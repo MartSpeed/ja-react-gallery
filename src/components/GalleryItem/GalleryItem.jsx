@@ -4,12 +4,20 @@
  * */
 
  function GalleryItem ({photo}) {
+    const addLikes = () => {
+      console.log('the like button works');
+    }
+
+
+ 
+
    return (<>
       <img src={photo.path} />
       <p>{photo.likes}</p>
       <p>{photo.description}</p>
       <p>
-        <button>Submit</button>
+        {/* why do I need to add a function inside of the  */}
+        <button onClick={() => addLikes()}> Submit</button>
       </p>
       
    </>)
