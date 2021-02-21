@@ -17,6 +17,8 @@
       <p>{photo.description}</p>
       <p>
         {/* why do I need to add a function inside of the  */}
+        {/* when using the onClick=() method in a button to call a function
+        use an empty arrow function to pass the value for this to work. */}
         <button onClick={() => addLikes()}> Submit</button>
       </p>
       
