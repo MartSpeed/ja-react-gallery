@@ -24,7 +24,6 @@
   const tileSwap = () => {
     console.log('inside of the tileSwap!');
     console.log('this is toggle track', toggleTrack);
-    setTrackToggle(toggleTrack + 1);
     // this makes it so that every other click is added and divided so
     // that there is always an even number
     // use a ternary operator for the purpose of react
@@ -53,9 +52,8 @@
     }
 
    return (<>
-      <div onClick={() => tileSwap()}>
-      <img src={photo.path} />
-      {/* {tileSwap()} */}
+      <div onClick={() => setTrackToggle(toggleTrack + 1)}>
+      {tileSwap()}
       
       </div>
           
