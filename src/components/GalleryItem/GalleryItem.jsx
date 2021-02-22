@@ -66,7 +66,7 @@
       <p>
         {/* when using the onClick=() method in a button to call a function
         use an empty arrow function to pass the value for this to work. */}
-        <button onClick={() => likesHandler()}> Submit</button>
+        <button onClick={() => likesHandler()}> Like!</button>
       </p>
       
    </>)
