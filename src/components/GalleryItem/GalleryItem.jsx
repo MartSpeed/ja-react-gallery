@@ -15,25 +15,30 @@
 
  function GalleryItem ({photo, getGalleryList}) {
 
-    // const addLikes = (prop_likes) => {
-    //   let likesId = prop_likes.GalleryList.id;
-    //   console.log('the like button works', target.id);
-    //   axios
-    //     .put(`/gallery/like:${prop_likes.target.id}`)
-    //     .then(response => {
-    //       console.log('inside te GET response for addLikes function component', response.data);
-    //       console.log('this is likesId', likesId);
-    //     })
-    //     .catch((error) => {
-    //       console.log('addLikes component error', error);
-    //     })
-    // }  
+  // this is the click event counter, this will hold the number of clicks
+  // create a useState function to hold the start of a number value;
+  const [toggleTrack, setTrackToggle] = useState(2);
 
+  // this is the function variable that will be called to inject
+  // or swap the photo.path to photo.description and back again
+  const tileSwap = () => {
+    console.log('inside of the tileSwap!');
+    console.log('this is toggle track', toggleTrack);
+    // this makes it so that every other click is added and divided so
+    // that there is always an even number
+    // use a ternary operator for the purpose of react
+    // this needs to be practice more, forget how to make these
+    return (
+      (toggleTrack % 2 === 0) ? (<p> <img src={photo.path} /> </p>) : (<p>{photo.description}</p>)
+    )
+    // (<p>{photo.path}</p>)
+    // console.log('im the photo')
+    // (<p>{photo.description}</p>)
+    // console.log('im in the info')
+  }
     const likesHandler = () => {
       //e.preventDefault();
       console.log('like button was clicked');
-      console.log('a', photo.id);
-      console.log('b', photo.likes);
       // axios GET request for database information of GalleryList 
         axios
           .put(`/gallery/like/${photo.id}`)
@@ -47,15 +52,18 @@
     }
 
    return (<>
-      <img src={photo.path} />
+      <div onClick={() => setTrackToggle(toggleTrack + 1)}>
+      {tileSwap()}
+      
+      </div>
+          
       <p>{photo.likes}</p>
-      {/* How do I grab the photo.likes onClick Handler to take the
-          photo.likes++ operator to append it to the DOM, I need to use
-          props for this, but I how do I interpret that */}
-      {/* <p>{photo.likes}={likesHandler}</p> */}
-      <p>{photo.description}</p>
+
+      {/* <p>
+        {photo.description}
+      </p> */}
+
       <p>
-        {/* why do I need to add a function inside of the  */}
         {/* when using the onClick=() method in a button to call a function
         use an empty arrow function to pass the value for this to work. */}
         <button onClick={() => likesHandler()}> Submit</button>
