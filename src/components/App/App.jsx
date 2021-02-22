@@ -28,8 +28,6 @@ const getGalleryList = () => {
       <div className="App">
         <Header />
 
-        <p>Gallery goes here</p>
-
         {/* <img src="images/goat_small.jpg"/> */}
 
         <div className="react_container">
