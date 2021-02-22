@@ -54,7 +54,8 @@
 
    return (<>
       <div onClick={() => tileSwap()}>
-      {/* <img src={photo.path} /> */}
+      <img src={photo.path} />
+      {/* {tileSwap()} */}
       
       </div>
           
